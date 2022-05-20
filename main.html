@@ -13,32 +13,56 @@
 </head>
 <body>
     <header>
-        <nav class="flexin">
-            <a class="logo"href="main.html"><img src="#" alt="Logo"></a>
-            <ul>
-                <li><a href="#">Browse</a></li>
-                <li><a href="#">Following</a></li>
-            </ul>
+        <nav>
+            <ul class="flexin">
+            <li><a class="logo"class="box1" href="main.html"><img src="#" alt="Logo"></a></li>
+                <li class="box1"><a href="#">Browse</a></li>
+                <li class="box2"><a href="#">Following</a></li>
             
-            <form id="form" role="search">
-                <input type="search" id="query" name="q"
+            
+            <li class="box3"><form id="form" role="search">
+                <input type="search" id="query" class="search-input" name="q"
                  placeholder="Search"
                  aria-label="Search through site content">
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
               </form>
-
-            </nav>
-        </header>    
-        <div class="sidebar">
+            </li>
             
-        </div>
-   
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+        </header> 
+    
+        <div class="maincontainer">    
+    
+        <nav class="sidebar">
+            <div>
+                <ul class="sidelist">
+                    <li><span>content</span></li>
+                    <li><span>content</span></li>
+                    <li><span>content</span></li>
+                    <li><span>content</span></li>
+                    <li><span>content</span></li>
+                    <li><span>content</span></li>
+                    <li><span>content</span></li>
+                    <li><span>content</span></li>
+                </ul>
+            </div>
+        </nav>
+
     <section class="streamerlist">
-        <div class="square1"></div>
-        <div class="square2"></div>
-        <div class="square3"></div>
-        <div class="square4"></div>
+        <ul>
+            <li><span>1</span></li>
+            <li><span>2</span></li>
+            <li><span>3</span></li>
+            <li><span>4</span></li>
+            <li><span>5</span></li>
+            <li><span>6</span></li>
+            <li><span>7</span></li>
+            <li><span>8</span></li>
+        </ul>
     </section>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
