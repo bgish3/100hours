@@ -138,3 +138,35 @@ a {
   color: white;
   margin: 1.5rem;
 }
+
+.contact-form h2{
+font-size: 2rem;
+color: white;
+font-weight: bold;
+text-align: center;
+padding-top: 1rem;
+}
+
+.contact-form p{
+  color: white;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.contact-form{
+  border-top: 2px solid white;
+}
+
+.copyright{
+  font-weight: bold;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.contact-form a{
+display: flex;
+justify-content: center;
+padding: 1.5rem 0;
+font-weight: bold;
+text-decoration: underline;
+}
