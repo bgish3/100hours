@@ -1,11 +1,13 @@
-import React from 'react';
+import { Box } from '@chakra-ui/react';
+import Nav from '../components/Nav';
 
-function Home() {
+const Home = () => {
   return (
-    <div>
-      <button></button>
-    </div>
+    <Box>
+      <Nav />
+      <Box></Box>
+    </Box>
   );
-}
+};
 
 export default Home;
