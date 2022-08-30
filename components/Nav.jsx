@@ -1,13 +1,12 @@
-import React from 'react'
-import Box from '@chakra-ui/react'
+import React from 'react';
+import Box from '@chakra-ui/react';
 
 function Nav(props) {
   return (
     <Box>
-    <div>Nav</div>
+      <div>Nav</div>
     </Box>
-  )
+  );
 }
 
-
-export default Nav
+export default Nav;

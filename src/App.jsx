@@ -9,21 +9,23 @@ import {
   Grid,
   theme,
 } from '@chakra-ui/react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Login from "./Pages/Login";
-import Home from "./Pages/Home"
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Login from './pages/Login';
 
 const App = () => {
   return (
     <ChakraProvider theme={theme}>
       <Box>
-      <div>
-    </div>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+          </Routes>
+        </Router>
       </Box>
     </ChakraProvider>
   );
 };
-
-
 
 export default App;
