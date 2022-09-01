@@ -68,13 +68,21 @@ const LoginForm = () => {
             <Checkbox>Remember Me</Checkbox>
           </Box>
           <Box>
-            <Link color={'teal'}>Forgot your password?</Link>
+            <Link color={'teal.300'}>Forgot your password?</Link>
           </Box>
         </Stack>
 
-        <Button color={'teal'} width="full" mt={4}>
+        <Button fontWeight="bold" color={'teal.300'} width="full" mt={4}>
           Sign In
         </Button>
+        <Box textAlign="center" pt="2rem">
+          <div>
+            Don't have an account?{' '}
+            <Link fontWeight="bold" color={'teal.300'}>
+              Signup
+            </Link>
+          </div>
+        </Box>
       </form>
     </Box>
   );
