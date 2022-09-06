@@ -11,21 +11,21 @@ function AddTodo({ addTodo }) {
   const handleSubmit = e => {
     setValue(e.target.value);
   };
-  const handleClick = a => {
-    a.preventDefault();
-  };
+    const handleClick = a => {
+      a.preventDefault();
+    };
 
-  const addTask = () => {
-    setTodoList([...todoList, value]);
+    const addTask = () => {
+      setTodoList([...todoList, value]);
 
-    const deleteTask = () => {};
+      const deleteTask = () => {};
 
-    if (value === '') {
-      alert('Enter text!');
-    }
-    const todo = {
-      id: nanoid(),
-      text: value,
+      if (value === '') {
+        alert('Enter text!');
+      }
+      const todo = {
+        id: nanoid(),
+        text: value,
     };
 
     addTodo(todo);

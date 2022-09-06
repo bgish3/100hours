@@ -6,9 +6,14 @@ import {
   Flex,
   Heading,
   Spacer,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  Avatar,
 } from '@chakra-ui/react';
 import Button from '../components/Button';
-import { Avatar } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 
 const NavThemeChanger = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -24,13 +29,24 @@ const NavThemeChanger = () => {
       </Box>
       <Spacer />
       <Box p="2rem" textAlign="right" py={4}>
-        <IconButton
-          icon={colorMode === 'light' ? <FaMoon /> : <FaSun />}
-          onClick={toggleColorMode}
-          variant="ghost"
-        />
+        <Menu>
+        <MenuButton>
+          <Avatar mr="1rem" name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
+        </MenuButton>
+        <MenuList>
+          <MenuItem>
+            <IconButton
+                icon={colorMode === 'light' ? <FaMoon /> : <FaSun />}
+                onClick={toggleColorMode}
+                variant="ghost"
+              />
+          </MenuItem>
+          <MenuItem>
+            <Link to="/login">Logout</Link>
+          </MenuItem>
+          </MenuList>
+        </Menu>
       </Box>
-      <Avatar mr="1rem" name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
     </Flex>
   );
 };
